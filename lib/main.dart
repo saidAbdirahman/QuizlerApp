@@ -1,63 +1,92 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const Quizler());
-}
+void main() => runApp(Quizzler());
 
-class Quizler extends StatelessWidget {
-  const Quizler({super.key});
-
+class Quizzler extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-
-    return  MaterialApp(
-      darkTheme: ThemeData.dark(),
-      debugShowCheckedModeBanner: false,
-      home: QuizPage(),
+    return MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.grey.shade900,
+        body: SafeArea(
+          child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: 10.0),
+            child: QuizPage(),
+          ),
+        ),
+      ),
     );
-
   }
 }
 
 class QuizPage extends StatefulWidget {
-  const QuizPage({super.key});
-
   @override
-  State<QuizPage> createState() => _QuizPageState();
+  _QuizPageState createState() => _QuizPageState();
 }
 
 class _QuizPageState extends State<QuizPage> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
-      backgroundColor: Colors.black,
-      body: Padding(
-        padding: EdgeInsets.all(20),
-        child: Column(
-          children: [
-            Expanded(
-              flex: 3,
-              child:
-              Center(child: Text("This where the question text will go")),
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: <Widget>[
+        Expanded(
+          flex: 5,
+          child: Padding(
+            padding: EdgeInsets.all(10.0),
+            child: Center(
+              child: Text(
+                'This is where the question text will go.',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 25.0,
+                  color: Colors.white,
+                ),
+              ),
             ),
-            Container(
-              height: 70,
-              color: Colors.green,
-              width: double.infinity,
-              child: Center(child: Text('True')),
-            ),
-            SizedBox(
-              height: 18,
-            ),
-            Container(
-              height: 70,
-              color: Colors.red,
-              width: double.infinity,
-              child: Center(child: Text('False')),
-            ),
-          ],
+          ),
         ),
-      ),
+        Expanded(
+          child: Padding(
+            padding: EdgeInsets.all(15.0),
+            child: ElevatedButton(
+
+
+              child: Text(
+                'True',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20.0,
+                ),
+              ),
+              onPressed: () {
+                //The user picked true.
+              },
+            ),
+          ),
+        ),
+        Expanded(
+          child: Padding(
+            padding: EdgeInsets.all(15.0),
+            child: ElevatedButton(
+
+
+              child: Text(
+                'False',
+                style: TextStyle(
+                  fontSize: 20.0,
+                  color: Colors.white,
+                ),
+              ),
+              onPressed: () {
+                //The user picked false.
+              },
+            ),
+          ),
+        ),
+        //TODO: Add a Row here as your score keeper
+      ],
     );
   }
 }
