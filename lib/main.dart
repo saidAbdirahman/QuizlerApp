@@ -13,7 +13,7 @@ class Quizler extends StatelessWidget {
     return  MaterialApp(
       darkTheme: ThemeData.dark(),
       debugShowCheckedModeBanner: false,
-      home:null,
+      home: QuizPage(),
     );
 
   }
