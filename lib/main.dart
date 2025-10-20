@@ -37,12 +37,14 @@ class _QuizPageState extends State<QuizPage> {
                   Center(child: Text("This where the question text will go")),
             ),
             Container(
+              height: 70,
               color: Colors.green,
               width: double.infinity,
               child: Text('True'),
             ),
-            Container(
 
+            Container(
+              height: 70,
               color: Colors.green,
               width: double.infinity,
               child: Text('False'),
