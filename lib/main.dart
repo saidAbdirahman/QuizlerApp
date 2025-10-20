@@ -28,9 +28,11 @@ class _QuizPageState extends State<QuizPage> {
         body: Column(
           children: [
             Expanded(
+              flex: 3,
               child: Text("This where the question text will go"),
             ),
             Expanded(
+              flex: 1,
                 child: Container(
                   color: Colors.green,
                     width: double.infinity,
@@ -38,6 +40,7 @@ class _QuizPageState extends State<QuizPage> {
             ),
             ),
             Expanded(
+              flex: 1,
               child: Container(
                 color: Colors.green,
                 width: double.infinity,
