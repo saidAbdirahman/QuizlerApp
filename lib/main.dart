@@ -9,10 +9,13 @@ class Quizler extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.all(10),
-      child: QuizPage(),
+
+    return  MaterialApp(
+      darkTheme: ThemeData.dark(),
+      debugShowCheckedModeBanner: false,
+      home:null,
     );
+
   }
 }
 
@@ -26,33 +29,31 @@ class QuizPage extends StatefulWidget {
 class _QuizPageState extends State<QuizPage> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: Column(
-          children: [
-            Expanded(
-              flex: 3,
-              child:
-                  Center(child: Text("This where the question text will go")),
-            ),
-            Container(
-              height: 70,
-              color: Colors.green,
-              width: double.infinity,
-              child: Center(child: Text('True')),
-            ),
-            SizedBox(
-              height: 18,
-            ),
-            Container(
-              height: 70,
-              color: Colors.red,
-              width: double.infinity,
-              child: Center(child: Text('False')),
-            ),
-          ],
-        ),
+    return  Scaffold(
+      backgroundColor: Colors.black,
+      body: Column(
+        children: [
+          Expanded(
+            flex: 3,
+            child:
+            Center(child: Text("This where the question text will go")),
+          ),
+          Container(
+            height: 70,
+            color: Colors.green,
+            width: double.infinity,
+            child: Center(child: Text('True')),
+          ),
+          SizedBox(
+            height: 18,
+          ),
+          Container(
+            height: 70,
+            color: Colors.red,
+            width: double.infinity,
+            child: Center(child: Text('False')),
+          ),
+        ],
       ),
     );
   }
