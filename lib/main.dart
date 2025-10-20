@@ -33,9 +33,16 @@ class _QuizPageState extends State<QuizPage> {
             Expanded(
                 child: Container(
                   color: Colors.green,
-              ,
+                    width: double.infinity,
               child: Text('True'),
             ),
+            ),
+            Expanded(
+              child: Container(
+                color: Colors.green,
+                width: double.infinity,
+                child: Text('False'),
+              ),
             ),
           ],
         ),
