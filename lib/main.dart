@@ -13,7 +13,6 @@ class Quizler extends StatelessWidget {
   }
 }
 
-
 class QuizPage extends StatefulWidget {
   const QuizPage({super.key});
 
@@ -24,13 +23,20 @@ class QuizPage extends StatefulWidget {
 class _QuizPageState extends State<QuizPage> {
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
-
+    return MaterialApp(
       home: Scaffold(
-
         body: Column(
           children: [
-            Expanded(child: Text("This where the question text will go"))
+            Expanded(
+              child: Text("This where the question text will go"),
+            ),
+            Expanded(
+                child: Container(
+                  color: Colors.green,
+              ,
+              child: Text('True'),
+            ),
+            ),
           ],
         ),
       ),
