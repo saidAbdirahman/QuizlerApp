@@ -47,7 +47,7 @@ class _QuizPageState extends State<QuizPage> {
             ),
             Container(
               height: 70,
-              color: Colors.green,
+              color: Colors.red,
               width: double.infinity,
               child: Center(child: Text('False')),
             ),
