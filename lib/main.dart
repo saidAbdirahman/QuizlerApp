@@ -26,7 +26,9 @@ class _QuizPageState extends State<QuizPage> {
   Widget build(BuildContext context) {
     return  MaterialApp(
       home: Scaffold(
-        body: null,
+        body: Column(
+          children: [],
+        ),
       ),
     );
   }
