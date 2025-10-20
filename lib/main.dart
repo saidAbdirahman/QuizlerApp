@@ -49,7 +49,7 @@ class _QuizPageState extends State<QuizPage> {
               height: 70,
               color: Colors.green,
               width: double.infinity,
-              child: Text('False'),
+              child: Center(child: Text('False')),
             ),
           ],
         ),
