@@ -31,29 +31,32 @@ class _QuizPageState extends State<QuizPage> {
   Widget build(BuildContext context) {
     return  Scaffold(
       backgroundColor: Colors.black,
-      body: Column(
-        children: [
-          Expanded(
-            flex: 3,
-            child:
-            Center(child: Text("This where the question text will go")),
-          ),
-          Container(
-            height: 70,
-            color: Colors.green,
-            width: double.infinity,
-            child: Center(child: Text('True')),
-          ),
-          SizedBox(
-            height: 18,
-          ),
-          Container(
-            height: 70,
-            color: Colors.red,
-            width: double.infinity,
-            child: Center(child: Text('False')),
-          ),
-        ],
+      body: Padding(
+        padding: EdgeInsets.all(20),
+        child: Column(
+          children: [
+            Expanded(
+              flex: 3,
+              child:
+              Center(child: Text("This where the question text will go")),
+            ),
+            Container(
+              height: 70,
+              color: Colors.green,
+              width: double.infinity,
+              child: Center(child: Text('True')),
+            ),
+            SizedBox(
+              height: 18,
+            ),
+            Container(
+              height: 70,
+              color: Colors.red,
+              width: double.infinity,
+              child: Center(child: Text('False')),
+            ),
+          ],
+        ),
       ),
     );
   }
