@@ -9,7 +9,10 @@ class Quizler extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return QuizPage();
+    return Padding(
+      padding: EdgeInsets.all(10),
+      child: QuizPage(),
+    );
   }
 }
 
@@ -30,23 +33,19 @@ class _QuizPageState extends State<QuizPage> {
           children: [
             Expanded(
               flex: 3,
-              child: Center(child: Text("This where the question text will go")),
+              child:
+                  Center(child: Text("This where the question text will go")),
             ),
-            Expanded(
-              flex: 1,
-                child: Container(
-                  color: Colors.green,
-                    width: double.infinity,
+            Container(
+              color: Colors.green,
+              width: double.infinity,
               child: Text('True'),
             ),
-            ),
-            Expanded(
-              flex: 1,
-              child: Container(
-                color: Colors.green,
-                width: double.infinity,
-                child: Text('False'),
-              ),
+            Container(
+
+              color: Colors.green,
+              width: double.infinity,
+              child: Text('False'),
             ),
           ],
         ),
