@@ -29,7 +29,7 @@ class _QuizPageState extends State<QuizPage> {
           children: [
             Expanded(
               flex: 3,
-              child: Text("This where the question text will go"),
+              child: Center(child: Text("This where the question text will go")),
             ),
             Expanded(
               flex: 1,
