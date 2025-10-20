@@ -25,9 +25,13 @@ class _QuizPageState extends State<QuizPage> {
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
+
       home: Scaffold(
+
         body: Column(
-          children: [],
+          children: [
+            Expanded(child: Text("This where the question text will go"))
+          ],
         ),
       ),
     );
