@@ -20,7 +20,12 @@ class Quizzler extends StatelessWidget {
 }
 
 class QuizPage extends StatefulWidget {
-  List scoreKeeper = [
+  @override
+  _QuizPageState createState() => _QuizPageState();
+}
+
+class _QuizPageState extends State<QuizPage> {
+  List<Icon> scoreKeeper = [
     Icon(
       Icons.check,
       color: Colors.green,
@@ -47,11 +52,6 @@ class QuizPage extends StatefulWidget {
     ),
 
   ];
-  @override
-  _QuizPageState createState() => _QuizPageState();
-}
-
-class _QuizPageState extends State<QuizPage> {
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -114,9 +114,7 @@ class _QuizPageState extends State<QuizPage> {
         ),
         //TODO: Add a Row here as your score keeper
         Row(
-          children: [
-
-          ],
+          children: scoreKeeper,
         ),
       ],
     );
