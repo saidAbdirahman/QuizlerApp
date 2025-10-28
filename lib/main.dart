@@ -43,7 +43,7 @@ class _QuizPageState extends State<QuizPage> {
     Question(q: 'Approximately one quarter of human bones are in the feet.', a: true),
     Question(q: 'A slug\'s blood is green.', a: true)
 
-  ]
+  ];
 
   int tracker = 0;
   @override
