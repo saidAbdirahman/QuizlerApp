@@ -33,7 +33,6 @@ class _QuizPageState extends State<QuizPage> {
   'A slug\'s blood is green.'
   ];
   List<bool> answers = [
-    true,
     false,
     true,
     true
@@ -65,7 +64,10 @@ class _QuizPageState extends State<QuizPage> {
           child: Padding(
             padding: EdgeInsets.all(15.0),
             child: ElevatedButton(
+              style: ElevatedButton.styleFrom(
 
+                backgroundColor: Colors.green
+              ),
 
               child: Text(
                 'True',
