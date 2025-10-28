@@ -76,7 +76,11 @@ class _QuizPageState extends State<QuizPage> {
               onPressed: () {
                 //The user picked true.
                 bool correctAnswer = answers[tracker];
-                
+                if(correctAnswer == true){
+                  print('User got it right');
+                }else{
+                  print('User got it wrong');
+                }
                 if(!(tracker >  2 && tracker < 0)){
                   setState(() {
                     tracker ++;
