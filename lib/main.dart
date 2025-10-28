@@ -33,8 +33,8 @@ class _QuizPageState extends State<QuizPage> {
   'A slug\'s blood is green.'
   ];
   List<bool> answers = [
-    
-  ]
+
+  ];
   int tracker = 0;
   @override
   Widget build(BuildContext context) {
