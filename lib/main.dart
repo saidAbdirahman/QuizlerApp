@@ -35,7 +35,8 @@ class _QuizPageState extends State<QuizPage> {
   List<bool> answers = [
     true,
     false,
-    false
+    true,
+    true
   ];
   int tracker = 0;
   @override
