@@ -94,6 +94,11 @@ class _QuizPageState extends State<QuizPage> {
               ),
               onPressed: () {
                 //The user picked false.
+                if(!(tracker >  2 && tracker < 0)){
+                  setState(() {
+                    tracker ++;
+                  });
+                }
               },
             ),
           ),
