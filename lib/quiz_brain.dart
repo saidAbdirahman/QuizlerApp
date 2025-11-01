@@ -30,4 +30,7 @@ class QuizBrain{
 
   ];
 
+  String getQuestionText(int questionNumber){
+    return _questionBank()
+  }
 }
