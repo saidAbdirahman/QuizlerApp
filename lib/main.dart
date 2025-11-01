@@ -80,11 +80,11 @@ class _QuizPageState extends State<QuizPage> {
                 }else{
                   print('User got it wrong');
                 }
-                
+
                   setState(() {
                     quizBrain.nextQuestion()
                   });
-                }
+
               },
             ),
           ),
