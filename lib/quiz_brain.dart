@@ -31,6 +31,6 @@ class QuizBrain{
   ];
 
   String getQuestionText(int questionNumber){
-    return _questionBank()
+    return _questionBank[questionNumber].questionText;
   }
 }
