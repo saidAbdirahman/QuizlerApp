@@ -80,7 +80,7 @@ class _QuizPageState extends State<QuizPage> {
                 }else{
                   print('User got it wrong');
                 }
-                if(!(tracker >  2 && tracker < 0)){
+                
                   setState(() {
                     quizBrain.nextQuestion()
                   });
@@ -115,7 +115,7 @@ class _QuizPageState extends State<QuizPage> {
                   setState(() {
                    quizBrain.nextQuestion()
                   });
-                
+
               },
             ),
           ),
