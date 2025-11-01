@@ -82,7 +82,7 @@ class _QuizPageState extends State<QuizPage> {
                 }
                 if(!(tracker >  2 && tracker < 0)){
                   setState(() {
-                    tracker ++;
+                    quizBrain.nextQuestion()
                   });
                 }
               },
