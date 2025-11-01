@@ -105,7 +105,7 @@ class _QuizPageState extends State<QuizPage> {
               ),
               onPressed: () {
                 //The user picked false.
-                bool correctAnswer = quizBrain.questionBank[tracker].questionAnswer;
+                bool correctAnswer = quizBrain.getQuestionAnswer(tracker);
                 if(correctAnswer == false){
                   print('User got it right');
                 }else{
