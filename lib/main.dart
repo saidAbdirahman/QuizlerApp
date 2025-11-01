@@ -82,7 +82,7 @@ class _QuizPageState extends State<QuizPage> {
                 }
 
                   setState(() {
-                    quizBrain.nextQuestion()
+                    quizBrain.nextQuestion();
                   });
 
               },
