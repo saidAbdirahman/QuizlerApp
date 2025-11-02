@@ -40,6 +40,9 @@ class _QuizPageState extends State<QuizPage> {
       print('User got it wrong');
     }
 
+    setState(() {
+      quizBrain.nextQuestion();
+    });
   }
 
 
