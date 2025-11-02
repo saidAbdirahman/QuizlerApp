@@ -42,7 +42,7 @@ class _QuizPageState extends State<QuizPage> {
       scoreKeeper.add(Icon(Icons.close,color: Colors.red,));
     }
 
-    setState(() {
+
       quizBrain.nextQuestion();
     });
   }
