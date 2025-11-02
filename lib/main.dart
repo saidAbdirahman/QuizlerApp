@@ -38,7 +38,7 @@ class _QuizPageState extends State<QuizPage> {
       scoreKeeper.add(Icon(Icons.check, color: Colors.green,));
 
     }else{
-      print('User got it wrong');
+      scoreKeeper.add(Icon(Icons.close,color: Colors.red,));
     }
 
     setState(() {
