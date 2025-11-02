@@ -33,6 +33,12 @@ class _QuizPageState extends State<QuizPage> {
   List<Icon> scoreKeeper = [];
 
   void checkAnswer(bool userPickedAnswer){
+    bool correctAnswer = quizBrain.getQuestionAnswer();
+    if(correctAnswer == userPickedAnswer){
+      print('User got it right');
+    }else{
+      print('User got it wrong');
+    }
 
   }
 
