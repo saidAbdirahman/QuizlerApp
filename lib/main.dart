@@ -108,16 +108,6 @@ class _QuizPageState extends State<QuizPage> {
               ),
               onPressed: () {
                 //The user picked false.
-                bool correctAnswer = quizBrain.getQuestionAnswer();
-                if(correctAnswer == false){
-                  print('User got it right');
-                }else{
-                  print('User got it wrong');
-                }
-
-                  setState(() {
-                   quizBrain.nextQuestion();
-                  });
 
               },
             ),
